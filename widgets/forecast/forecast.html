@@ -1,0 +1,81 @@
+<div id="summary">
+    <h1>
+        <canvas data-bind-class="current_icon" width="84px" height="84px"></canvas>
+        <span data-bind="current_temp | raw | append '&deg;'"></span>
+    </h1>
+    <h2 data-bind="current_desc | raw"></h2>
+    <h4>
+        <span data-bind="daily_high | raw | prepend 'High ' | append '&deg; / '"></span> <span data-bind="daily_low | raw | prepend 'Low ' | append '&deg;'"></span>
+    </h4>
+</div>
+
+<div id="detail">
+    <div class="row">
+        <div class="col-md" style="text-align: -webkit-right;">
+            <h2>
+                <canvas data-bind-class="current_icon" width="64px" height="64px"></canvas>
+                <span data-bind="current_temp | raw | append '&deg;'"></span>
+            </h2>
+            <h3 data-bind="current_desc | raw"></h3>
+        </div>
+        <div class="col-md" style="text-align: -webkit-left;">
+            <h4>
+                <span data-bind="daily_high | raw | prepend 'High ' | append '&deg;'"></span><br /><span data-bind="daily_low | raw | prepend 'Low ' | append '&deg;'"></span>
+            </h4>
+        </div>
+    </div>
+    <div class="container" style="clear:both;">
+        <div class="row" style="font-size: smaller;">
+            <!--<div data-foreach-item="items" class="col-sm">
+                <canvas data-bind-class="item.icon | append ' forecast-icon'" width="44px" height="44px"></canvas>
+                <div>
+                    <span data-bind="item.temperatureHigh | append '&deg;'"></span> / <span data-bind="item.temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>-->
+            <div class="col-sm">
+                <div data-bind="items[1].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[1].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[1].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[1].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div data-bind="items[2].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[2].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[2].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[2].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div data-bind="items[3].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[3].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[3].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[3].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="font-size: smaller;">
+            <div class="col-sm">
+                <div data-bind="items[4].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[4].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[4].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[4].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div data-bind="items[5].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[5].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[5].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[5].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div data-bind="items[6].day"></div>
+                <div class="container">
+                    <canvas data-bind-class="items[6].icon | append ' forecast-icon'" width="64px" height="64px"></canvas>
+                    <span data-bind="items[6].temperatureHigh | append '&deg;'"></span><br /><span data-bind="items[6].temperatureLow | append '&deg;'"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

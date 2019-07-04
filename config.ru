@@ -1,7 +1,11 @@
 require 'dashing'
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  if ENV['SMASHING_AUTH_TOKEN']
+    set :auth_token, ENV['SMASHING_AUTH_TOKEN']
+  else
+    set :auth_token, 'YOUR_AUTH_TOKEN'
+  end
 
   helpers do
     def protected!

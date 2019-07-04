@@ -5,7 +5,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #222;
+$background-color: transparent;
 $text-color: #fff;
 
 $background-warning-color-1: #e82711;
@@ -46,7 +46,6 @@ body {
   background-color: $background-color;
   font-size: 20px;
   color: $text-color;
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 b, strong {
@@ -85,28 +84,6 @@ td {
 ul, ol {
   padding: 0;
   margin: 0;
-}
-
-h1, h2, h3, h4, h5, p {
-  padding: 0;
-  margin: 0;
-}
-h1 {
-  margin-bottom: 12px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400;
-}
-h2 {
-  text-transform: uppercase;
-  font-size: 76px;
-  font-weight: 700;
-  color: $text-color;
-}
-h3 {
-  font-size: 25px;
-  font-weight: 600;
-  color: $text-color;
 }
 
 // ----------------------------------------------------------------------------
@@ -255,4 +232,3 @@ h3 {
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-

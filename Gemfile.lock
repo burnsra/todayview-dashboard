@@ -12,7 +12,15 @@ GEM
       tzinfo
     eventmachine (1.2.7)
     execjs (2.7.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.2)
+      faraday
+      hashie
+      multi_json
+    hashie (3.6.0)
     multi_json (1.13.1)
+    multipart-post (2.1.1)
     mustermann (1.0.3)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -59,6 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  forecast_io
   smashing
 
 BUNDLED WITH
